@@ -19,6 +19,7 @@ CYD_LED LED;
 
 void setup() {
   Serial.begin(115200); // Initialise Serial port
+  Serial.println("CYD RGB LED Demo");
 
   LED.begin();          // Initialise LED Object
 }
@@ -45,7 +46,7 @@ void loop() {
   LED.set_Color(WHITE);
   delay(1000);
 
-  
+  LED.turnOff();
   delay(1000);
 
 
